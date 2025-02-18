@@ -19,7 +19,11 @@
       }
 
       header > nav a, header > nav a:visited {
-        background-color: #cbe7c5;
+        text-decoration: underline;
+        font-size: 1.5em;
+        color: green;
+        font-family: monospace;
+        border: none;
       }
 
       @media (max-width: 450px) {
@@ -30,6 +34,59 @@
 
       nav ul {
         list-style-type: none;
+      }
+
+      .port-header {
+          margin-bottom: 20px;
+          font-size: 1.2em;
+      }
+
+      .port-block {
+          margin-bottom: 30px;
+      }
+
+      .port-block div {
+          padding-left: 9px;
+          border: 1px solid teal;
+          border-width: 0px 0px 0px 6px;
+          margin-bottom: 19px;
+      }
+
+      .skills-list div {
+          padding-left: 9px;
+          border: 1px solid #1faf7b;
+          border-width: 0px 0px 0px 6px;
+          margin-bottom: 19px;
+      }
+
+      .skills-list div span.level {
+        color: #1faf7b;
+        font-weight: bold;
+      }
+
+      span.level {
+        color: #1faf7b;
+        font-weight: bold;
+        font-family: monospace;
+      }
+
+      .about-me p {
+        padding-left: 9px;
+        border: 1px solid #cbc7ed;
+        border-width: 0px 0px 0px 6px;
+        margin-bottom: 19px;
+      }
+
+      .contact-options div {
+        padding-left: 9px;
+        border: 1px solid #ffce9e;
+        border-width: 0px 0px 0px 6px;
+        margin-bottom: 36px;
+      }
+
+      .contact-options a {
+        text-decoration: none;
+        font-size: 1.2em;
       }
     </style>
   </head>
@@ -52,59 +109,61 @@
     <main>
       <h2 id="skills">My Skills</h2>
       
-      <ul>
-        <li><strong>Wordpress backend</strong> - 9/10: custom plugins, admin pages, data migration, hooks, filters, cron jobs, you name it.</li>
-        <li><strong>Wordpress frontend</strong> - 7/10: custom themes, design via Elementor, HTML/CSS tweaks, custom JS code, etc</li>
-        <li><strong>WooCommerce</strong> - 8/10: payment gateways, checkout modifications, cart restrictions, product licenses, and so on.</li>
-        <li><strong>PHP</strong> - 8/10: can easily code both in free form and using various frameworks</li>
-        <li><strong>Javascript</strong> - 6/10: my skills are a bit rusty there. Currently I'm trying to learn React basics. Do I even need it for my line of work?...</li>
-        <li><strong>MySQL</strong> - 8/10: writing complex queries, database maintenance, export/import, etc</li>
-        <li><strong>git</strong> - 7/10: general repository use, basic branching, using diffs, logs, etc.</li>
-        <li><strong>Linux Shell</strong> - 6/10: I use Ubuntu for my daily work. Can SSH to a remote server, run some maintenance, change file permissions, write a simple Bash script.</li>
-        <li><strong>Python</strong> - 2/10: I'm a beginner who is just starting there.</li>
-      </ul>
+      <div class="skills-list">
+        <div><strong>Wordpress backend</strong> - <span class="level">9/10</span>: custom plugins, admin pages, data migration, hooks, filters, cron jobs, you name it.</div>
+        <div><strong>Wordpress frontend</strong> - <span class="level">8/10</span>: custom themes, design via Elementor, HTML/CSS tweaks, custom JS code, etc</div>
+        <div><strong>WooCommerce</strong> - <span class="level">8/10</span>: payment gateways, checkout modifications, cart restrictions, product licenses, and so on.</div>
+        <div><strong>PHP</strong> - <span class="level">8/10</span>: can easily code both in free form and using various frameworks. </div>
+        <div><strong>Javascript</strong> - <span class="level">6/10</span>: my skills are a bit rusty there. Currently I'm trying to learn React basics. <em>Do I even need it for my line of work?...</em></div>
+        <div><strong>MySQL</strong> - <span class="level">8/10</span>: writing complex queries, database maintenance, export/import, etc</div>
+        <div><strong>git</strong> - <span class="level">7/10</span>: general repository use, basic branching, using diffs, commit history.</div>
+        <div><strong>Linux Shell</strong> - <span class="level">6/10</span>: I use Ubuntu for my daily work. Can use SSH to work a remote server, do some maintenance there, change file permissions, etc. Can write a simple Bash script.</div>
+        <div><strong>Python</strong> - <span class="level">2/10</span>: I'm a beginner who is just starting there.</div>
+      </div>
       
       <h2 id="portfolio">Portfolio</h2>
       
-      <ul>
-        <li>Wordpress plugins & customizations:</li>
-        <ul>
-          <li>May 2020 - present: <a href="https://audioplugin.deals/">AudioPluginDeals</a> <!--(TODO -- Add project page)--> </li>
-          <li>June 2024 - present: <a href="https://github.com/artemavv/storefront-child-tb">TannyBunny</a> <!--(TODO -- Add project page)--> </li>
-          <li>March 2023 - present: <i>Loop Queue</i> <!--(TODO -- Add project page)--></li>
-          <li>March 2024 - November 2024: <a href="https://github.com/artemavv/developer-dashboard">Developer dashboard</a> <!--(TODO -- Add project page)--> </li>
-          <li>August 2023 - May 2024: <i>Scrabble search</i> <!--(TODO -- Add repo, readme, links)--> </li>
-          <li>March 2023 - April 2023: <a href="https://github.com/artemavv/nks-integration-plugin">NKS Integration</a> <!--(TODO -- Add project page)--> </li>
-        </ul>
-        <li>Design using Elementor:</li>
-        <ul>
-          <li>March 2024 - April 2024: <a href="https://mintygo.io/">MintyGo</a> - migrate existing design from Udesly to Elementor</li>
-          <li>August 2022 - present: <a href="https://audioplugin.deals/">AudioPluginDeals</a> - tweaks and updates for Elementor-based design</li>
-        </ul>
-        <li>Previously:</li>
-        <ul>
-          <li>May 2020 - February 2023: <a href="https://www.baeldung.com/">Baeldung</a> (maintenance, making plugins, theme modifications, tech support )</li>
-          <li>August 2020 - August 2022: <a href="https://linkprodigy.com/">LinkProdigy</a> (making wordpress plugin, first versions)</li>
-          <li>2015 - 2019: <a href="https://briancasel.com/">Brian Casel</a> (making plugins, tech support, customer support)</li>
-        </ul>
-      </ul>
+      <div class="portfolio">
+        <h3 class="port-header">Wordpress plugins & customizations:</h3>
+        <div class="port-block">
+          <div>May 2020 - present: <a href="https://audioplugin.deals/">AudioPluginDeals</a> <!--(TODO -- Add project page)--> </div>
+          <div>June 2024 - present: <a href="https://github.com/artemavv/storefront-child-tb">TannyBunny</a> <!--(TODO -- Add project page)--> </div>
+          <div>March 2023 - present: <i>Loop Queue</i> <!--(TODO -- Add project page)--></div>
+          <div>March 2024 - November 2024: <a href="https://github.com/artemavv/developer-dashboard">Developer dashboard</a> <!--(TODO -- Add project page)--> </div>
+          <div>August 2023 - May 2024: <i>Scrabble search</i> <!--(TODO -- Add repo, readme, links)--> </div>
+          <div>March 2023 - April 2023: <a href="https://github.com/artemavv/nks-integration-plugin">NKS Integration</a> <!--(TODO -- Add project page)--> </div>
+        </div>
+        <h3 class="port-header">Design using Elementor:</h3>
+        <div class="port-block">
+          <div>March 2024 - April 2024: <a href="https://mintygo.io/">MintyGo</a> - migrate existing design from Udesly to Elementor</div>
+          <div>August 2022 - present: <a href="https://audioplugin.deals/">AudioPluginDeals</a> - tweaks and updates for Elementor-based design</div>
+        </div>
+        <h3 class="port-header">Previously:</h3>
+        <div class="port-block">
+          <div>May 2020 - February 2023: <a href="https://www.baeldung.com/">Baeldung</a> (maintenance, making plugins, theme modifications, tech support )</div>
+          <div>August 2020 - August 2022: <a href="https://linkprodigy.com/">LinkProdigy</a> (making wordpress plugin, first versions)</div>
+          <div>2015 - 2019: <a href="https://briancasel.com/">Brian Casel</a> (making plugins, tech support, customer support)</div>
+        </div>
+      </div>
       
       <h2 id="about">About me</h2>
       
-      <p>I've been freelancing since 2013. My skills were modest at first but eventually I've gained more and more experience.</p>
-      <p>Most of my skills are in the area of website development, Wordpress specifically.</p>
-      <p>For many years, I've lived without personal website and neglected to keep track of my professional progress. Now it is time to catch up.</p>
-      <p>My native language is Russian, but in my professional activity I use English almost exclusively.</p>
-      <p>I have now migrated to Italy, so it is time to learn Italian, too!</p>
-      <p>I'm also hard of hearing, so I would not be able to take your calls or participate in meetings. I'm not sure if that is for worse or for better :)</p>
+      <div class="about-me">
+        <p>I've been freelancing since 2013. My skills were modest at first but eventually I've gained more and more experience.</p>
+        <p>Most of my skills are in the area of website development, Wordpress specifically.</p>
+        <p>For many years, I've lived without personal website and neglected to keep track of my professional progress. Now it is time to catch up.</p>
+        <p>My native language is Russian, but in my professional activity I use English almost exclusively.</p>
+        <p>I have now migrated to Italy, so it is time to learn Italian, too!</p>
+        <p>I'm also hard of hearing, so I would not be able to take your calls or participate in meetings. I'm not sure if that is for worse or for better :)</p>
+      </div>
       
-      <h2 id="contact">Contact</h2>
+      <h2 id="contact">Get in touch</h2>
       
-      <ul>
-        <li><a href="https://www.upwork.com/freelancers/~015abc84ec751da69a?">Upwork</a></li>
-        <li><a href="https://www.linkedin.com/in/artem-avvakumov-598941212/">LinkedIn</a></li>
-        <li><a href="mailto:artem.the.freelancer@gmail.com">Email</a></li>
-      </ul>
+      <div class="contact-options">
+        <div><a href="https://www.upwork.com/freelancers/~015abc84ec751da69a?">Upwork</a></div>
+        <div><a href="https://www.linkedin.com/in/artem-avvakumov-598941212/">LinkedIn</a></div>
+        <div><a href="mailto:artem.the.freelancer@gmail.com">Email</a></div>
+      </div>
     </main>
         
   </body>
