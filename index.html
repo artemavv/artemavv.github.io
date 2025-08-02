@@ -4,36 +4,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>A personal website of Wordpress freelancer</title>
     <style>
       
       header, main {
-        border-bottom: 1px solid #555;
         padding: 20px;
       }
 
+      body {
+        background-color: #f7f7f4;
+      }
+
       body > header {
-        background-color: #c9e1c9;
+        background-color: #d2e8ff;
+      }
+
+      header h1 {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 600px;
+        line-height: 1.5em;
+        color: #206f63;
+        padding-top: 60px;
+        padding-bottom: 50px;
       }
 
       header > nav a, header > nav a:visited {
         text-decoration: underline;
-        font-size: 1.5em;
-        color: green;
-        font-family: monospace;
+        font-size: 1.7em;
+        color: #35868e;
+        font-weight: 700;
         border: none;
       }
 
+
+      .raleway-text {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+
+      .roboto-text {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 1.5em;
+        font-variation-settings:
+          "wdth" 100;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+      }
+
+      nav ul li {
+        flex: 0 0 150px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
       @media (max-width: 450px) {
-        nav {
-          display:none;
+        nav ul li {
+          font-size: 0.7em;
         }
       }
 
-      nav ul {
-        list-style-type: none;
+
+      @media (max-width: 350px) {
+        nav ul {
+          display: none;
+        }
+      }
+
+      .heading {
+        font-size: 1.2em;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 900px;
+      }
+
+      nav {
+        margin-top: 40px;
+      }
+
+    
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
       }
 
       ul.examples {
@@ -76,7 +145,6 @@
       span.level {
         color: #1faf7b;
         font-weight: bold;
-        font-family: monospace;
       }
 
       .about-me p {
@@ -99,14 +167,16 @@
       }
     </style>
   </head>
-  <body style="background-color: beige; ">
+  <body class="roboto-text">
     <header>
-      
-      <img src="cat.jpg" style="margin: 30px; width: 50%; max-width: 300px;" />
-      <div>
-        <p class="subtitle">I'm an independent freelancer, who is maintaining Wordpress sites, making plugins and other web stuff.</p>
+      <h1 class="raleway-text">All of your Wordpress & WooCommerce tasks done in no time.</h1>
+      <div class="heading raleway-text">
+        <p class="subtitle">I'm an independent freelancer, who is maintaining Wordpress sites, making plugins and other web stuff. </p>
+        <p><strong>9 years</strong> of experience with PHP-based websites, including <strong>7 years</strong> of Wordpress development. </p>
+
+
       </div>
-      <nav>
+      <nav class="raleway-text">
         <ul>
           <li><a href="#skills">My Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -186,8 +256,6 @@
       
       <div class="contact-options">
         <div><a href="https://www.upwork.com/freelancers/~015abc84ec751da69a?">Upwork</a></div>
-        <div><a href="https://www.linkedin.com/in/artem-avvakumov-598941212/">LinkedIn</a></div>
-        <div><a href="mailto:artem.the.freelancer@gmail.com">Email</a></div>
       </div>
     </main>
         
